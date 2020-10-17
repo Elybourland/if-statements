@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statements</title>
+</head>
+<body>
+
+    <p>What is the magic word?</p>
+
+    <p><input type="text" id="magicWord"></p>
+
+    <p><button id="checkMagicWord">Submit Magic Word!</button></p>
+    
+
+    <script type="text/javascript">
+    
+        document.getElementById("checkMagicWord").onclick = function () {
+
+         var magicWordEntered = document.getElementById("magicWord").value;
+
+        var magicWord = "abracadabra";
+
+        if (magicWordEntered == magicWord) {
+
+            alert("BAM!");
+
+        } else {
+
+            alert("NOPE!");
+
+        }
+
+        }
+    
+    
+    </script>
+</body>
+</html>
